@@ -1,5 +1,8 @@
+@import "helpers";
+@import "variables";
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, sans-serif;
     height: 100vh;
 }
 
@@ -11,7 +14,7 @@ body {
 .container {
     display: grid;
     justify-items: center;
-    margin-top: 20px;
+    margin-top: toRem(20px);
 }
 
 li {
@@ -25,7 +28,7 @@ li {
 }
 
 .btnContainer>button {
-    padding: 3px 5px;
+    padding: toRem(3px) toRem(5px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,23 +36,23 @@ li {
     font-size: 1.4rem;
     background-color: rgb(27, 50, 72);
     color: white;
-    border-radius: 7px;
+    border-radius: toRem(7px);
     width: 100%;
-    margin-top: 10px;
+    margin-top: toRem(10px);
 }
 
 ul {
     width: 100%;
-    min-width: 270px;
-    min-height: 500px;
-    margin-top: 10px;
+    min-width: toRem(270px);
+    min-height: toRem(500px);
+    margin-top: toRem(10px);
 }
 
 ul>li {
     font-size: 1.4rem;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 5px;
+    border-radius: toRem(10px);
+    padding: toRem(5px);
+    margin-top: toRem(5px);
 }
 
 li>span {
